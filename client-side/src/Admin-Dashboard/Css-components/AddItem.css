@@ -1,0 +1,161 @@
+/* AddItem.css */
+
+.AddItem-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Use min-height to ensure it takes full viewport height */
+    padding: 20px;
+    box-sizing: border-box; /* Include padding in element's total width and height */
+    background-color: #f0f2f5; /* Light background for the page */
+}
+
+.add-item-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Make it responsive */
+    max-width: 600px; /* Max width for larger screens */
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* More pronounced shadow */
+}
+
+.add-item-form h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+    font-size: 1.8em;
+}
+
+.form-group {
+    margin-bottom: 18px; /* Slightly increased spacing */
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px; /* Spacing between label and input */
+    font-weight: bold;
+    color: #555;
+    font-size: 0.95em;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px; /* Slightly more rounded corners */
+    font-size: 1em;
+    box-sizing: border-box; /* Ensures padding doesn't affect total width */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input[type="file"] {
+    padding: 10px 0; /* Adjust padding for file input */
+}
+
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25); /* Focus highlight */
+    outline: none;
+}
+
+textarea {
+    resize: vertical; /* Allow vertical resizing for description */
+    min-height: 80px; /* Minimum height for textarea */
+}
+
+/* Validation Error Styles */
+.input-error {
+    border-color: #dc3545 !important; /* Red border for errors */
+    box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.25) !important;
+}
+
+.error-message {
+    color: #dc3545; /* Red text for error messages */
+    font-size: 0.85em;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+/* Form-level messages (success/error) */
+.form-message {
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-align: center;
+    animation: fadeIn 0.5s ease-out; /* Simple fade-in animation */
+}
+
+.form-message.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.form-message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.submit-button {
+    background-color: #007bff;/* Green submit button */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 15px;
+}
+
+.submit-button:hover {
+    background-color: #218838;
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.submit-button:active {
+    transform: translateY(0);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .add-item-form {
+        padding: 25px;
+        margin: 15px; /* Add some margin on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .add-item-form {
+        padding: 20px;
+        margin: 10px;
+    }
+    .add-item-form h2 {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+    }
+    .form-group label,
+    .form-group input,
+    .form-group select,
+    .form-group textarea,
+    .submit-button {
+        font-size: 0.9em;
+        padding: 10px;
+    }
+}
+
+/* Animation for form messages */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}

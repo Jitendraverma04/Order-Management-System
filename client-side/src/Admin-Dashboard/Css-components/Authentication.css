@@ -1,0 +1,115 @@
+:root {
+    --boxRadius1: 50rem 10rem;
+    --boxRadius2: 10rem 50rem;
+    --bgColor: rgb(68, 68, 173);
+}
+.HomeComponent {
+    margin-top: .3rem;
+    display: flex;
+    height: 100vh;
+    background:var(--bgColor);
+    border-radius: var(--boxRadius1);
+}
+    
+.HomeComponent .LeftSide {
+    animation: leftSideAnimation 2s ease-in forwards;
+    display: flex; 
+    height: 90vh;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin-left: 8rem;
+    width: 50%;
+}
+
+.HomeComponent .RightSide {
+    /* background: rgb(68, 68, 173); */
+    
+    animation: rightSideAnimation 2s ease-in forwards;
+    text-align: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.HomeComponent .RightSide .navigate a{
+    position: relative;
+    z-index: 1;
+    top: 31em;
+    /* left: 45%; */
+}
+
+
+
+
+.AboutUsComponent {
+    margin-top: 1rem;
+    display: flex;
+    height: 100vh;
+    background: var(--bgColor);
+    border-radius: var(--boxRadius2);
+}
+
+.AboutUsComponent .LeftSide {
+    /* background: rgb(68, 68, 173); */
+    width: 50%;
+}
+.AboutUsComponent .LeftSide .Grid-box {
+    margin-left: 12px;
+    position: relative;
+    top: 10rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(2, auto);
+    gap: 2rem;
+}
+
+.AboutUsComponent .LeftSide .Grid-box img {
+    width: 80%; 
+    height: auto; 
+    object-fit: cover;
+     /* transform: rotate(-30deg); */
+
+}
+
+.AboutUsComponent .RightSide {
+    animation: rightSideAnimation 2s ease-in forwards;
+    margin-right: 5rem;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+ p{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+
+
+/* Key-Frames */
+
+@keyframes leftSideAnimation {
+    0% {
+        transform: translateX(-100%); 
+        opacity: 0; 
+    }
+    100% {
+        transform: translateX(0); 
+        opacity: 1;
+    }
+}
+
+@keyframes rightSideAnimation{
+    0% {
+        transform: translateX(+100%); 
+        opacity: 0; 
+    }
+    100% {
+        transform: translateX(0); 
+        opacity: 1;
+    }
+}
+

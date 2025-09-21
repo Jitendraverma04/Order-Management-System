@@ -1,0 +1,103 @@
+
+@media (max-width: 768px) {
+
+    .header-section header h2 {
+        font-size: 20px;
+    }
+  
+ .Menu-content .list-items { 
+        display: grid;
+        grid-template-columns: repeat(3, 2fr);
+        gap:.5rem;
+        width: 90vw;
+        margin-top:0rem;
+        padding: .5rem;
+        overflow-y:none;
+
+    }
+
+    .Menu-content .list-items button {
+        background: #000;
+        width: 28vw;
+        background: rgb(216, 216, 216);
+        border: 1px solid white;
+        box-shadow: 14px 10px 25px rgba(0, 0, 0, 0.2);
+        padding: .5rem;
+        transition: transform 0.2s ease-in, box-shadow 0.2s ease-in;
+        border-radius: 5px;
+        max-height: 200px;
+    }
+}
+
+@media (max-width: 468px) {
+    /* .FoodItem-container{
+        background: red;
+    } */
+    .FoodItem-container .FoodItem-card {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 8px;
+        width: 12rem;
+        text-align: center;
+        background: white;
+        height:20rem; 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow: hidden;
+      }
+
+      
+    /* .burger-container { */
+        /* background: red; */
+        /* display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh; 
+        padding: 2rem; */
+      /* } */
+      
+      .burger-list {
+        padding: 0rem;
+        gap: 1rem;
+      }
+      .burger-card {
+        /* border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 8px;
+        width: 1rem;
+        text-align: center;
+        background: white;
+        height: 15rem; 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow: hidden; */
+      }
+
+
+.Menu-content .list-items { 
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap:.4rem;
+    width: 90vw;
+    margin-top:0rem;
+    padding: .3rem;
+    /* height: 90vh; */
+}
+.Menu-content .list-items button {
+    background: #000;
+    width:40vw;
+    background: rgb(216, 216, 216);
+    border: 1px solid white;
+    box-shadow: 14px 10px 25px rgba(0, 0, 0, 0.2);
+    padding: .5rem;
+    transition: transform 0.2s ease-in, box-shadow 0.2s ease-in;
+    border-radius: 5px;
+    max-height: 400px;
+}
+
+.header-section header h2 {
+    font-size: 16px;
+}
+}

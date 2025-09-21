@@ -1,0 +1,49 @@
+
+
+.list-items {
+    background:#FFFFFF;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    gap: 1rem;
+    width: 90vw;
+  height: 80vh;
+  overflow-y: auto;
+  padding: 1rem;
+  border-radius: 10px;
+  }
+  
+.list-items::-webkit-scrollbar {
+  width: 8px;
+}
+
+.list-items::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.list-items::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.list-items::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+  .list-items button {
+    width: 90%;
+    background: rgb(216, 216, 216);
+    border: 1px solid white;
+    box-shadow: 14px 10px 25px rgba(0, 0, 0, 0.2);
+    padding: .5rem;
+    transition: transform 0.2s ease-in, box-shadow 0.2s ease-in;
+    border-radius: 5px;
+    max-height: 200px;
+}
+
+.list-items button:hover {
+    transform: scale(1.05);
+    box-shadow: 6px 6px 18px rgba(0, 0, 0, 0.3);
+}
+
+

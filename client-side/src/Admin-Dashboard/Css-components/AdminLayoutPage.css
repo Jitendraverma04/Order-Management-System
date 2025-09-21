@@ -1,0 +1,211 @@
+.admin-layout-wrapper {
+    display: flex;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f0f2f5;
+}
+
+.sidebar-container {
+    width: 250px;
+    background-color: #ffffff;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    transition: width 0.3s ease;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+.sidebar-header {
+    padding: 0 20px 20px 20px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 20px;
+}
+
+.sidebar-header h2 {
+    color: #333;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.sidebar-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-nav li {
+    margin-bottom: 5px;
+}
+
+.sidebar-nav a,
+/* .sidebar-nav .sidebar-dropdown, */
+.sidebar-nav button {
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    color: #555;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    border-radius: 5px;
+    margin: 0 10px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    width: calc(100% - 20px);
+    text-align: left;
+}
+
+/* .sidebar-dropdown {
+    padding: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    border-radius: 4px;
+    color: #333;
+  } */
+  
+  /* .sidebar-dropdown.active{
+    background-color: #007bff;
+    cursor: pointer;
+    color: #ffffff;
+    font-weight: 600;
+    box-shadow: 0 2px 5px rgba(0, 123, 255, 0.2);
+  } */
+
+  
+/* .sidebar-nav .sidebar-dropdown{
+    padding-left: 30px;
+}
+.sidebar-nav select
+{
+    cursor: pointer;
+    height: 8vh;
+    margin-left: 20px;
+} */
+
+.sidebar-nav a i,
+.sidebar-nav button i {
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 18px;
+    color: #888;
+}
+
+.sidebar-nav a:hover,
+.sidebar-nav button:hover {
+    background-color: #e9ecef;
+    color: #007bff;
+}
+
+.sidebar-nav a:hover i,
+.sidebar-nav button:hover i {
+    color: #007bff;
+}
+
+.sidebar-nav a.active {
+    background-color: #007bff;
+    color: #ffffff;
+    font-weight: 600;
+    box-shadow: 0 2px 5px rgba(0, 123, 255, 0.2);
+}
+
+.sidebar-nav a.active i {
+    color: #ffffff;
+}
+
+/* .sidebar-dropdown {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%23888888" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 20px;
+    padding-right: 40px;
+    border: 1px solid #ddd;
+} */
+
+/* .sidebar-dropdown:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.sidebar-dropdown option {
+    padding: 10px;
+} */
+
+.logout-button {
+    color: #dc3545;
+}
+
+.logout-button:hover {
+    background-color: #ffebe6;
+    color: #dc3545;
+}
+
+.main-content-area {
+    flex-grow: 1;
+    padding: 20px;
+    margin-left: 250px;
+    width: 83vw;
+    background-color: #f0f2f5;
+    overflow-y: auto;
+}
+
+@media (max-width: 768px) {
+    .admin-layout-wrapper {
+        flex-direction: column;
+    }
+
+    .sidebar-container {
+        position: relative;
+        width: 100%;
+        height: auto;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        padding: 10px 0;
+        top: auto;
+        left: auto;
+    }
+
+    .sidebar-nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .sidebar-nav li {
+        margin: 5px 10px;
+    }
+
+    .sidebar-nav a,
+    .sidebar-nav .sidebar-dropdown,
+    .sidebar-nav button {
+        padding: 8px 15px;
+        margin: 0;
+        width: auto;
+    }
+
+    .sidebar-header {
+        text-align: center;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+
+    .sidebar-header h2 {
+        font-size: 20px;
+    }
+
+    .main-content-area {
+        margin-left: 0;
+        padding-top: 10px;
+    }
+}

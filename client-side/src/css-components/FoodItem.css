@@ -1,0 +1,124 @@
+.FoodItem-container {
+    width: 100vw;
+    background: #FFFFFF;
+text-align: center;
+color: red;
+    height: 82vh; 
+    padding: 2rem;
+  }
+  
+  .FoodItem-list {   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    height: 100%;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f1f1f1;
+    padding: 1rem;
+  }
+  .FoodItem-list .FoodItem-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 8px;
+    width: 12rem;
+    text-align: center;
+    background: white;
+    height:18rem; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+  
+  .FoodItem-img {
+    width: 60%;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .FoodItem-list .FoodItem-card button{
+  /* background: red; */
+  }
+
+  h3,p{
+    color:black;
+  }
+  
+  h3 {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  
+  p {
+    font-size: 12px;
+    margin: 3px 0;
+  }
+  
+  .order-btn {
+    background: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .order-btn:hover {
+    transform: scale(1.1);
+  }
+  
+
+  .FoodItem-list::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .FoodItem-list::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+  }
+  
+  .FoodItem-list::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+  }
+  
+  .FoodItem-list::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  
+  /* .FoodItem-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 12px;
+    width: 14rem;
+    height: auto;
+    text-align: center;
+    background: white;
+  }
+   */
+  /* .FoodItem-img {
+    width: 50%;
+    border-radius: 10px;
+  } */
+  /*   
+    .order-btn {
+      padding: 10px;
+      background: green;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease-in-out;
+    }
+    
+    .order-btn:hover {
+      background: darkgreen;
+    } */
+  
